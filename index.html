@@ -384,20 +384,21 @@
         resize();
         addEventListener('resize', resize);
 
+        const MAX_PARTICLES = 150;
         const particles = [];
 
         class Particle {
             constructor(x, y, type) {
                 this.x = x;
                 this.y = y;
-                this.type = type; // 'trail' or 'click'
+                this.type = type;
                 if (type === 'trail') {
-                    this.size = Math.random() * 3 + 1;
+                    this.size = Math.random() * 3.5 + 1.5;
                     this.life = 1;
-                    this.decay = Math.random() * 0.03 + 0.02;
-                    this.vx = (Math.random() - 0.5) * 0.5;
-                    this.vy = (Math.random() - 0.5) * 0.5;
-                    this.hue = Math.random() * 60 + 220; // blue-purple range
+                    this.decay = Math.random() * 0.04 + 0.03;
+                    this.vx = (Math.random() - 0.5) * 0.8;
+                    this.vy = (Math.random() - 0.5) * 0.8;
+                    this.hue = Math.random() * 60 + 220;
                 } else {
                     this.size = Math.random() * 6 + 2;
                     this.life = 1;
@@ -418,36 +419,47 @@
                     this.size *= 0.98;
                 }
             }
-            draw() {
-                ctx.save();
-                ctx.globalAlpha = this.life;
-                ctx.fillStyle = `hsl(${this.hue}, 80%, 65%)`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.restore();
-            }
         }
 
+        let mouseX = 0, mouseY = 0, needsTrail = false;
         addEventListener('mousemove', e => {
-            for (let i = 0; i < 3; i++) {
-                particles.push(new Particle(e.clientX, e.clientY, 'trail'));
-            }
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            needsTrail = true;
         });
 
         addEventListener('click', e => {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) {
                 particles.push(new Particle(e.clientX, e.clientY, 'click'));
             }
         });
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = particles.length - 1; i >= 0; i--) {
-                particles[i].update();
-                particles[i].draw();
-                if (particles[i].life <= 0) particles.splice(i, 1);
+
+            if (needsTrail && particles.length < MAX_PARTICLES) {
+                for (let i = 0; i < 2; i++) {
+                    particles.push(new Particle(mouseX, mouseY, 'trail'));
+                }
+                needsTrail = false;
             }
+
+            let alive = 0;
+            for (let i = 0; i < particles.length; i++) {
+                const p = particles[i];
+                p.update();
+                if (p.life > 0) {
+                    ctx.globalAlpha = p.life;
+                    ctx.fillStyle = `hsl(${p.hue},80%,65%)`;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, 6.2832);
+                    ctx.fill();
+                    particles[alive++] = p;
+                }
+            }
+            particles.length = alive;
+            ctx.globalAlpha = 1;
+
             requestAnimationFrame(animate);
         }
         animate();
