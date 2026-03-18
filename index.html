@@ -426,10 +426,8 @@
             }
         }
 
-        let frame = 0;
         addEventListener('mousemove', e => {
-            frame++;
-            if (frame % 2 === 0) {
+            for (let i = 0; i < 3; i++) {
                 particles.push(new Particle(e.clientX, e.clientY, 'trail'));
             }
         });
