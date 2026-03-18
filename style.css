@@ -349,14 +349,10 @@ main {
     background: #fff;
 }
 
-.edu-logo-nycu {
-    width: 120px;
-    height: 120px;
-}
-
+.edu-logo-nycu,
 .edu-logo-fhsh {
-    width: 67px;
-    height: 67px;
+    width: 100px;
+    height: 100px;
 }
 
 .edu-logo-img {
