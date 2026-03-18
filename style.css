@@ -97,6 +97,25 @@ main {
     padding: 60px 0 40px;
 }
 
+.hero-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--border);
+}
+
 .hero h1 {
     font-size: 32px;
     font-weight: 700;
@@ -303,6 +322,21 @@ footer {
 @media (max-width: 640px) {
     .nav-links {
         display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-links {
+        justify-content: center;
     }
 
     .hero h1 {
