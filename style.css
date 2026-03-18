@@ -139,11 +139,7 @@ main {
     margin-bottom: 20px;
 }
 
-.skills-list p {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: var(--text-secondary);
-}
+
 
 .hero-links {
     display: flex;
