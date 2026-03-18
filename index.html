@@ -45,9 +45,9 @@
                     <img src="photo.png" alt="Hsiao, Chun-En">
                 </div>
                 <div class="hero-text">
-                    <p class="hero-greeting">Hello, I'm</p>
-                    <h1>Hsiao, Chun-En <span class="zh">(蕭群恩)</span></h1>
-                    <p class="hero-tagline">Undergraduate Researcher &middot; AI Security &amp; VLA</p>
+                    <p class="hero-greeting fade-in-up">Hello, I'm</p>
+                    <h1 class="name-gradient">&#10024; <span id="typewriter"></span><span class="cursor">|</span></h1>
+                    <p class="hero-tagline fade-in-up fade-delay-2">Undergraduate Researcher &middot; AI Security &amp; VLA</p>
                     <p class="bio">
                         I am an undergraduate student in the <strong>Arete Honors Program</strong> at
                         <a href="https://www.nycu.edu.tw/" target="_blank">National Yang Ming Chiao Tung University (NYCU)</a>,
@@ -373,6 +373,22 @@
             <p>&copy; 2026 Hsiao, Chun-En</p>
         </div>
     </footer>
+
+    <script>
+    (() => {
+        const text = 'Hsiao, Chun-En (蕭群恩)';
+        const el = document.getElementById('typewriter');
+        let i = 0;
+        function type() {
+            if (i <= text.length) {
+                el.textContent = text.slice(0, i);
+                i++;
+                setTimeout(type, i <= 14 ? 80 : 100);
+            }
+        }
+        setTimeout(type, 500);
+    })();
+    </script>
 
     <canvas id="cursor-canvas"></canvas>
     <script>
