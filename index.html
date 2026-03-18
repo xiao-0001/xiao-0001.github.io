@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background mesh -->
-    <div class="bg-mesh"></div>
+    <!-- Animated background blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
     <nav>
         <div class="nav-inner">
@@ -23,6 +27,9 @@
                 <a href="#awards">Awards</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -34,7 +41,9 @@
                     <img src="photo.png" alt="Hsiao, Chun-En">
                 </div>
                 <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
                     <h1>Hsiao, Chun-En <span class="zh">蕭群恩</span></h1>
+                    <p class="hero-tagline">Undergraduate Researcher &middot; AI Security &amp; VLA</p>
                     <p class="bio">
                         I am an undergraduate student in the <strong>Arete Honors Program</strong> at
                         <a href="https://www.nycu.edu.tw/" target="_blank">National Yang Ming Chiao Tung University (NYCU)</a>,
@@ -45,20 +54,26 @@
                         <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">BASIC Lab</a>,
                         advised by <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">Prof. Hong-Han Shuai (帥宏翰)</a>.
                         Our work includes investigating <strong>transferable adversarial attacks</strong> across heterogeneous object detection architectures,
-                        reducing <strong>hallucination in edge LLM tool calling</strong> through metacognitive verification,
                         exploring <strong>vision-language-action model reasoning</strong>,
                         and developing <strong>embedded AI systems</strong> for real-time vehicle perception on edge devices.
                     </p>
                     <p class="bio">
-                        My research interests span <strong>AI security and robustness</strong>,
-                        <strong>computer vision</strong>, and <strong>vision-language-action models</strong>.
-                        I am broadly interested in understanding and improving the reliability of deep learning systems
-                        under adversarial conditions.
+                        I am driven by a core question: <em>how can we build AI systems that remain reliable when faced with adversarial or out-of-distribution conditions?</em>
+                        This motivates my work across <strong>AI security</strong>, <strong>computer vision</strong>, and <strong>vision-language-action models</strong>.
                     </p>
                     <div class="hero-links">
-                        <a href="mailto:hsiao.chun.en@gmail.com" class="btn">Email</a>
-                        <a href="https://github.com/xiao-0001" target="_blank" class="btn">GitHub</a>
-                        <a href="CHUN_EN_HSIAO_CV.pdf" class="btn">CV</a>
+                        <a href="mailto:hsiao.chun.en@gmail.com" class="btn btn-primary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Email
+                        </a>
+                        <a href="https://github.com/xiao-0001" target="_blank" class="btn btn-outline">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="CHUN_EN_HSIAO_CV.pdf" class="btn btn-outline">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -66,9 +81,11 @@
 
         <!-- Education -->
         <section class="section" id="education">
-            <h2>Education</h2>
+            <h2><span class="section-icon">&#127891;</span> Education</h2>
             <div class="edu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/National_Yang_Ming_Chiao_Tung_University_logo.svg/1200px-National_Yang_Ming_Chiao_Tung_University_logo.svg.png" alt="NYCU" class="edu-logo">
+                <div class="edu-logo-wrap nycu-bg">
+                    <span class="edu-logo-text">NYCU</span>
+                </div>
                 <div class="edu-content">
                     <div class="exp-header">
                         <div>
@@ -83,7 +100,9 @@
                 </div>
             </div>
             <div class="edu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/6f/KSFSH_logo.gif/200px-KSFSH_logo.gif" alt="FHSH" class="edu-logo">
+                <div class="edu-logo-wrap fhsh-bg">
+                    <span class="edu-logo-text">FHSH</span>
+                </div>
                 <div class="edu-content">
                     <div class="exp-header">
                         <div>
@@ -101,193 +120,199 @@
 
         <!-- Research Interests -->
         <section class="section" id="interests">
-            <h2>Research Interests</h2>
+            <h2><span class="section-icon">&#128300;</span> Research Interests</h2>
             <div class="interests-grid">
                 <div class="interest-card card-security">
-                    <div class="card-icon">&#128737;</div>
-                    <h3>AI Security &amp; Robustness</h3>
-                    <p>Adversarial Machine Learning, Model Robustness Evaluation, Transferability Analysis, Prompt Injection and Jailbreak Attacks</p>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-icon">&#128737;</div>
+                        <h3>AI Security &amp; Robustness</h3>
+                        <p>Adversarial Machine Learning, Model Robustness Evaluation, Transferability Analysis, Prompt Injection and Jailbreak Attacks</p>
+                    </div>
                 </div>
                 <div class="interest-card card-cv">
-                    <div class="card-icon">&#128065;</div>
-                    <h3>Computer Vision</h3>
-                    <p>Object Detection, Vision-Language-Action Models, Visual Reasoning Mechanisms</p>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-icon">&#128065;</div>
+                        <h3>Computer Vision</h3>
+                        <p>Object Detection, Vision-Language-Action Models, Visual Reasoning Mechanisms</p>
+                    </div>
                 </div>
                 <div class="interest-card card-nlp">
-                    <div class="card-icon">&#128172;</div>
-                    <h3>Natural Language Processing</h3>
-                    <p>Large Language Models, Reasoning and Chain-of-Thought, Multi-Agent Systems, Retrieval-Augmented Generation</p>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-icon">&#128172;</div>
+                        <h3>Natural Language Processing</h3>
+                        <p>Large Language Models, Reasoning and Chain-of-Thought, Multi-Agent Systems, Retrieval-Augmented Generation</p>
+                    </div>
                 </div>
                 <div class="interest-card card-interdisciplinary">
-                    <div class="card-icon">&#9881;</div>
-                    <h3>Interdisciplinary Applications</h3>
-                    <p>Edge AI and Embedded Vision Systems, IoT-Enabled Perception, Historical and Archaeological Data Analysis</p>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-icon">&#9881;</div>
+                        <h3>Interdisciplinary Applications</h3>
+                        <p>Edge AI and Embedded Vision Systems, IoT-Enabled Perception, Historical and Archaeological Data Analysis</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Research Experience -->
         <section class="section" id="experience">
-            <h2>Research Experience</h2>
+            <h2><span class="section-icon">&#128218;</span> Research Experience</h2>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>AI Cybersecurity Detection and Verification</h3>
-                        <p class="exp-role">專題生, <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3>AI Cybersecurity Detection and Verification</h3>
+                                <p class="exp-role">專題生, <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                            </div>
+                            <span class="exp-date">Sep. 2025 &ndash; Aug. 2026</span>
+                        </div>
+                        <ul>
+                            <li>Working on a National Institute of Cyber Security research project with Prof. Shuai, focusing on transferable adversarial attacks in object detection.</li>
+                            <li>Studying the transferability of adversarial perturbations across heterogeneous detection architectures (YOLO, DINO, DiffusionDet) under cross-model and cross-distribution settings.</li>
+                        </ul>
                     </div>
-                    <span class="exp-date">Sep. 2025 &ndash; Aug. 2026</span>
                 </div>
-                <ul>
-                    <li>Working on a National Institute of Cyber Security research project with Prof. Shuai, focusing on transferable adversarial attacks in object detection.</li>
-                    <li>Studying the transferability of adversarial perturbations across heterogeneous detection architectures (YOLO, DINO, DiffusionDet) under cross-model and cross-distribution settings.</li>
-                </ul>
-            </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Adversarial Attack on Object Detection</h3>
-                        <p class="exp-role">Independent Study &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Adversarial Attack on Object Detection</h3>
+                                <p class="exp-role">Independent Study &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                            </div>
+                            <span class="exp-date">Sep. 2025 &ndash; Jan. 2026</span>
+                        </div>
+                        <ul>
+                            <li>Conducted an independent study under Prof. Shuai on adversarial patch methods for object detection, investigating spatial-based perturbations and their impact on detection confidence and bounding box predictions.</li>
+                            <li>Analyzed robustness vulnerabilities across different detection paradigms and examined failure modes under various attack configurations.</li>
+                        </ul>
                     </div>
-                    <span class="exp-date">Sep. 2025 &ndash; Jan. 2026</span>
                 </div>
-                <ul>
-                    <li>Conducted an independent study under Prof. Shuai on adversarial patch methods for object detection, investigating spatial-based perturbations and their impact on detection confidence and bounding box predictions.</li>
-                    <li>Analyzed robustness vulnerabilities across different detection paradigms and examined failure modes under various attack configurations.</li>
-                </ul>
-            </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Reducing Residual Hallucination in Edge LLM Tool Calling (MetaCog)</h3>
-                        <p class="exp-role"><a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Vision-Language-Action Model Reasoning Methods</h3>
+                                <p class="exp-role">Agile Team Leader, GDGC NYCU &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                            </div>
+                            <span class="exp-date">Jan. 2026 &ndash; Present</span>
+                        </div>
+                        <ul>
+                            <li>Leading a team surveying recent advances in VLA reasoning, including RL-based methods and structured prompting techniques (chain-of-thought, self-consistency).</li>
+                            <li>Running experiments comparing reasoning performance on visual benchmarks, analyzing trade-offs between inference cost and accuracy.</li>
+                        </ul>
                     </div>
-                    <span class="exp-date">Mar. 2026 &ndash; Present</span>
                 </div>
-                <ul>
-                    <li>Investigating metacognitive verification in edge LLMs (&lt;30B) for tool calling under information insufficiency, discovering that models possess latent parameter-verification capability but fail to activate it spontaneously.</li>
-                    <li>Built MetaCog-Bench, a cross-domain benchmark (22 domains, 4,567 samples) for evaluating tool-calling hallucination and metacognition.</li>
-                    <li>Developing R-Tuning (SFT + GRPO) to internalize verification behavior, achieving significant hallucination rate reduction on vanilla prompts without inference-time scaffolding.</li>
-                </ul>
-            </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Vision-Language-Action Model Reasoning Methods</h3>
-                        <p class="exp-role">Agile Team Leader, GDGC NYCU &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3>AI in Embedded Systems</h3>
+                                <p class="exp-role">GDGC NYCU &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                            </div>
+                            <span class="exp-date">Jan. 2026 &ndash; Present</span>
+                        </div>
+                        <ul>
+                            <li>Building an embedded vision system for vehicle surrounding perception and warning, deploying detection models on resource-constrained platforms (Raspberry Pi, NVIDIA Jetson).</li>
+                        </ul>
                     </div>
-                    <span class="exp-date">Jan. 2026 &ndash; Present</span>
                 </div>
-                <ul>
-                    <li>Leading a team surveying recent advances in VLA reasoning, including RL-based methods and structured prompting techniques (chain-of-thought, self-consistency).</li>
-                    <li>Running experiments comparing reasoning performance on visual benchmarks, analyzing trade-offs between inference cost and accuracy.</li>
-                </ul>
-            </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>AI in Embedded Systems</h3>
-                        <p class="exp-role">GDGC NYCU &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Adversarial Voice Attack on Speech Recognition</h3>
+                                <p class="exp-role">Researcher &middot; High School Science Fair</p>
+                            </div>
+                            <span class="exp-date">Feb. 2024 &ndash; Jul. 2024</span>
+                        </div>
+                        <ul>
+                            <li>Designed targeted adversarial audio perturbations using FGSM and CMA-ES optimization, evaluating attack effectiveness on Silero STT under white-box and black-box threat models.</li>
+                        </ul>
                     </div>
-                    <span class="exp-date">Jan. 2026 &ndash; Present</span>
                 </div>
-                <ul>
-                    <li>Building an embedded vision system for vehicle surrounding perception and warning, deploying detection models on resource-constrained platforms (Raspberry Pi, NVIDIA Jetson).</li>
-                </ul>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Adversarial Voice Attack on Speech Recognition</h3>
-                        <p class="exp-role">Researcher &middot; High School Science Fair</p>
-                    </div>
-                    <span class="exp-date">Feb. 2024 &ndash; Jul. 2024</span>
-                </div>
-                <ul>
-                    <li>Designed targeted adversarial audio perturbations using FGSM and CMA-ES optimization, evaluating attack effectiveness on Silero STT under white-box and black-box threat models.</li>
-                </ul>
             </div>
         </section>
 
         <!-- Awards -->
         <section class="section" id="awards">
-            <h2>Honors &amp; Awards</h2>
+            <h2><span class="section-icon">&#127942;</span> Honors &amp; Awards</h2>
 
             <div class="awards-group">
                 <h3 class="awards-category">International</h3>
                 <div class="award-item">
-                    <div class="award-header">
-                        <span class="award-name">Excellence Award in Human-Aligned Evaluation, CURE-BENCH @ NeurIPS 2025</span>
-                        <span class="award-date">Dec. 2025</span>
+                    <div class="award-badge">&#127759;</div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <span class="award-name">Excellence Award in Human-Aligned Evaluation, CURE-BENCH @ NeurIPS 2025</span>
+                            <span class="award-date">Dec. 2025</span>
+                        </div>
+                        <p>Developed AI agent systems for therapeutic reasoning and drug decision-making, demonstrating strong alignment with human expert judgment.</p>
                     </div>
-                    <p>Developed AI agent systems for therapeutic reasoning and drug decision-making, demonstrating strong alignment with human expert judgment.</p>
                 </div>
             </div>
 
             <div class="awards-group">
                 <h3 class="awards-category">Domestic</h3>
                 <div class="award-item">
-                    <div class="award-header">
-                        <span class="award-name">Creative Award, Hsinchu Policy Hackathon</span>
-                        <span class="award-date">Nov. 2025</span>
+                    <div class="award-badge">&#127961;</div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <span class="award-name">Creative Award, Hsinchu Policy Hackathon</span>
+                            <span class="award-date">Nov. 2025</span>
+                        </div>
+                        <p>Built CitySight, an urban maintenance visualization platform integrating public infrastructure data for city governance.</p>
                     </div>
-                    <p>Built CitySight, an urban maintenance visualization platform integrating public infrastructure data for city governance.</p>
                 </div>
                 <div class="award-item">
-                    <div class="award-header">
-                        <span class="award-name">Excellence Award in Region 6, Taiwan National Science Fair</span>
-                        <span class="award-date">Apr. 2024</span>
+                    <div class="award-badge">&#127941;</div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <span class="award-name">Excellence Award in Region 6, Taiwan National Science Fair</span>
+                            <span class="award-date">Apr. 2024</span>
+                        </div>
+                        <p>Regional excellence for adversarial voice attack research. Advanced to the 64th Taiwan National Science Fair.</p>
                     </div>
-                    <p>Regional excellence for adversarial voice attack research. Advanced to the 64th Taiwan National Science Fair.</p>
                 </div>
             </div>
         </section>
 
         <!-- Activities -->
         <section class="section" id="activities">
-            <h2>Activities</h2>
+            <h2><span class="section-icon">&#127793;</span> Activities</h2>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Google Developer Group On Campus (GDGC NYCU)</h3>
-                        <p class="exp-role">Administrative Team &amp; Research Team Member</p>
-                    </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>Google Developer Group On Campus (GDGC NYCU)</h3>
+                    <p class="exp-role">Administrative Team &amp; Research Team Member</p>
                     <span class="exp-date">Sep. 2025 &ndash; Present</span>
                 </div>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>AI Advanced Talent Program</h3>
-                        <p class="exp-role">Selected Participant &middot; Ministry of Education, Taiwan</p>
-                    </div>
+                <div class="activity-card">
+                    <h3>AI Advanced Talent Program</h3>
+                    <p class="exp-role">Selected Participant &middot; Ministry of Education, Taiwan</p>
                     <span class="exp-date">Aug. 2023 &ndash; Jul. 2024</span>
                 </div>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>CS Club, National Feng Shan Senior High School</h3>
-                        <p class="exp-role">AI Instructor &amp; General Affairs</p>
-                    </div>
+                <div class="activity-card">
+                    <h3>CS Club, National Feng Shan Senior High School</h3>
+                    <p class="exp-role">AI Instructor &amp; General Affairs</p>
                     <span class="exp-date">Jun. 2023 &ndash; Jun. 2024</span>
                 </div>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <h3>Kaohsiung High School CS Club Alliance</h3>
-                        <p class="exp-role">Vice President</p>
-                    </div>
+                <div class="activity-card">
+                    <h3>Kaohsiung High School CS Club Alliance</h3>
+                    <p class="exp-role">Vice President</p>
                     <span class="exp-date">Jun. 2023 &ndash; Jun. 2024</span>
                 </div>
             </div>
@@ -321,7 +346,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Hsiao, Chun-En. Built with GitHub Pages.</p>
+            <p>&copy; 2026 Hsiao, Chun-En</p>
         </div>
     </footer>
 </body>
