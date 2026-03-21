@@ -38,43 +38,43 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: var(--bg);
+    background: linear-gradient(135deg, #f0f0ff 0%, #f8f4ff 25%, #f0f7ff 50%, #f8f0ff 75%, #f0f5ff 100%);
     overflow: hidden;
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.35;
+    filter: blur(90px);
+    opacity: 0.45;
     animation: float 20s ease-in-out infinite;
 }
 
 .blob-1 {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     top: -10%;
     left: -5%;
-    background: radial-gradient(circle, #a5b4fc, transparent);
+    background: radial-gradient(circle, #a5b4fc, #c7d2fe, transparent);
     animation-delay: 0s;
 }
 
 .blob-2 {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     top: 40%;
     right: -10%;
-    background: radial-gradient(circle, #c4b5fd, transparent);
+    background: radial-gradient(circle, #c4b5fd, #ddd6fe, transparent);
     animation-delay: -7s;
     animation-duration: 25s;
 }
 
 .blob-3 {
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
     bottom: -15%;
     left: 30%;
-    background: radial-gradient(circle, #93c5fd, transparent);
+    background: radial-gradient(circle, #93c5fd, #bfdbfe, transparent);
     animation-delay: -14s;
     animation-duration: 22s;
 }
