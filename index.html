@@ -133,7 +133,7 @@
                 <div class="interest-card card-nlp">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-icon">&#128221;</div>
+                        <div class="card-icon">&#128172;</div>
                         <h3>Natural Language Processing</h3>
                         <p>Large Language Models, Reasoning and Chain-of-Thought, Multi-Agent Systems, Retrieval-Augmented Generation</p>
                     </div>
@@ -445,7 +445,7 @@
         });
 
         addEventListener('click', e => {
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 45; i++) {
                 particles.push(new Particle(e.clientX, e.clientY, 'click'));
             }
         });
@@ -454,7 +454,7 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             if (needsTrail && particles.length < MAX_PARTICLES) {
-                for (let i = 0; i < 2; i++) {
+                for (let i = 0; i < 4; i++) {
                     particles.push(new Particle(mouseX, mouseY, 'trail'));
                 }
                 needsTrail = false;
