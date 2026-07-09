@@ -271,11 +271,16 @@ main {
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
-.section-icon {
-    font-size: 22px;
+.section h2::before {
+    content: '';
+    flex-shrink: 0;
+    width: 4px;
+    height: 20px;
+    background: var(--accent);
+    border-radius: 2px;
 }
 
 /* ===== Education with Logo Badges ===== */
@@ -350,8 +355,13 @@ main {
 }
 
 .card-accent {
-    display: none;
+    height: 3px;
 }
+
+.card-nlp .card-accent      { background: #8b5cf6; }
+.card-vla .card-accent      { background: #10b981; }
+.card-security .card-accent { background: #ef4444; }
+.card-cv .card-accent       { background: #3b82f6; }
 
 .card-body {
     padding: 20px 22px;
@@ -441,7 +451,7 @@ main {
 
 .exp-date {
     font-size: 13px;
-    color: var(--text-secondary);
+    color: var(--accent);
     white-space: nowrap;
     flex-shrink: 0;
     font-weight: 500;
@@ -519,7 +529,7 @@ main {
 
 .award-date {
     font-size: 13px;
-    color: var(--text-secondary);
+    color: var(--accent);
     white-space: nowrap;
     flex-shrink: 0;
     font-weight: 500;
@@ -575,7 +585,7 @@ main {
 
 .activity-card .exp-date {
     display: inline-block;
-    color: var(--text-secondary);
+    color: var(--accent);
     font-size: 12.5px;
     font-weight: 500;
 }
