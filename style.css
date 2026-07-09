@@ -22,6 +22,11 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
@@ -29,6 +34,13 @@ body {
     line-height: 1.7;
     font-size: 15px;
     overflow-x: hidden;
+}
+
+/* Offset anchor jumps so headings clear the sticky nav */
+section,
+.hero,
+.site-footer {
+    scroll-margin-top: 68px;
 }
 
 a {
@@ -40,6 +52,18 @@ a {
 a:hover {
     color: var(--accent-hover);
     text-decoration: underline;
+}
+
+/* Keyboard focus visibility */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-toggle:focus-visible,
+.footer-link:focus-visible,
+.pub-links a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 /* ===== Nav ===== */
@@ -58,6 +82,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-name {
@@ -153,14 +178,6 @@ main {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.hero-greeting {
-    font-size: 14px;
-    color: var(--accent);
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 4px;
-}
-
 .hero h1,
 .name {
     font-size: 30px;
@@ -176,25 +193,6 @@ main {
     color: var(--text-secondary);
     font-size: 22px;
     margin-left: 3px;
-}
-
-.fade-in-up {
-    animation: fadeInUp 0.8s ease both;
-}
-
-.fade-delay-2 {
-    animation-delay: 0.3s;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .hero-tagline {
@@ -588,12 +586,6 @@ main {
     border-color: #cbd0dc;
 }
 
-.award-badge {
-    font-size: 28px;
-    flex-shrink: 0;
-    line-height: 1;
-}
-
 .award-content {
     flex: 1;
 }
@@ -739,13 +731,28 @@ main {
     border-top: 1px solid var(--border);
     text-align: center;
     font-size: 13px;
-    color: #888;
+    color: #6b7280;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 640px) {
     .nav-links {
         display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+        padding: 18px 24px;
+        z-index: 100;
     }
 
     .nav-toggle {

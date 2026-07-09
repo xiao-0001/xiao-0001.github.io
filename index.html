@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hsiao, Chun-En</title>
+    <title>Chun-En Hsiao (蕭群恩) — Embodied AI &amp; VLA Researcher, NYCU</title>
+    <meta name="description" content="Chun-En Hsiao (蕭群恩) — undergraduate researcher at NYCU BASIC Lab working on vision-language-action and world action models for embodied AI, reliable LLM agents, and model quantization.">
+    <link rel="canonical" href="https://xiao-0001.github.io/">
+    <meta name="theme-color" content="#4f46e5">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Chun-En Hsiao (蕭群恩) — Embodied AI & VLA Researcher">
+    <meta property="og:description" content="Undergraduate researcher at NYCU BASIC Lab: vision-language-action & world action models, reliable LLM agents, model quantization.">
+    <meta property="og:url" content="https://xiao-0001.github.io/">
+    <meta property="og:image" content="https://xiao-0001.github.io/photo.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chun-En Hsiao (蕭群恩) — Embodied AI & VLA Researcher">
+    <meta name="twitter:description" content="Undergraduate researcher at NYCU BASIC Lab: VLA & world action models, reliable LLM agents, model quantization.">
+    <meta name="twitter:image" content="https://xiao-0001.github.io/photo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Chun-En Hsiao",
+      "alternateName": "蕭群恩",
+      "url": "https://xiao-0001.github.io/",
+      "email": "hsiao.chun.en@gmail.com",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "National Yang Ming Chiao Tung University"
+      },
+      "sameAs": [
+        "https://github.com/xiao-0001",
+        "https://www.linkedin.com/in/chun-en-hsiao-a76b9b364/",
+        "https://www.instagram.com/xiao._ce/"
+      ]
+    }
+    </script>
 </head>
 <body>
     <nav>
@@ -17,7 +54,7 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 Home Page
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#publications">Publications</a>
@@ -25,7 +62,7 @@
                 <a href="#awards">Awards</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button class="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -36,38 +73,37 @@
         <section class="hero" id="about">
             <div class="hero-content">
                 <div class="hero-photo">
-                    <img src="photo.png" alt="Hsiao, Chun-En">
+                    <img src="photo.png" alt="Chun-En Hsiao" width="170" height="170">
                 </div>
                 <div class="hero-text">
                     <h1 class="name">Hsiao, Chun-En <span class="name-zh">(蕭群恩)</span></h1>
                     <p class="hero-tagline">Undergraduate Researcher &middot; Embodied AI &middot; Vision-Language-Action &amp; World Action Models</p>
                     <p class="bio">
-                        I am an undergraduate student in the <a href="https://aretehp.nycu.edu.tw/?language=en" target="_blank"><strong>Arete Honors Program</strong></a> at
-                        <a href="https://en.nycu.edu.tw/" target="_blank">National Yang Ming Chiao Tung University (NYCU)</a>,
+                        I am an undergraduate student in the <a href="https://aretehp.nycu.edu.tw/?language=en" target="_blank" rel="noopener noreferrer"><strong>Arete Honors Program</strong></a> at
+                        <a href="https://en.nycu.edu.tw/" target="_blank" rel="noopener noreferrer">National Yang Ming Chiao Tung University (NYCU)</a>,
                         majoring in Artificial Intelligence in Engineering and Science.
                     </p>
                     <p class="bio">
                         I am currently an undergraduate researcher at the
-                        <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank">BASIC Lab</a>,
-                        advised by <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank">Prof. Hong-Han Shuai (帥宏翰)</a>.
-                        My current research centers on <strong>vision-language-action (VLA) models</strong> and <strong>world action models (WAM)</strong> for embodied AI &mdash;
-                        studying how agents perceive, reason, and act in interactive environments.
+                        <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank" rel="noopener noreferrer">BASIC Lab</a>,
+                        advised by <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank" rel="noopener noreferrer">Prof. Hong-Han Shuai (帥宏翰)</a>,
+                        where I work on <strong>vision-language-action (VLA) models</strong> and <strong>world action models (WAM)</strong> for embodied AI.
                     </p>
                     <p class="bio">
                         My research is driven by a simple question: <em>as AI systems become more capable and autonomous, how do we make them behave reliably under distribution shift and real-world uncertainty?</em>
-                        I study this through <strong>embodied AI</strong> &mdash; how <strong>vision-language-action</strong> and <strong>world action models</strong> perceive, reason, and act &mdash;
-                        drawing on my earlier work on the <strong>robustness and security</strong> of vision and language models to understand where and why they fail.
+                        I study this through <strong>embodied AI</strong> &mdash; how agents perceive, reason, and act &mdash;
+                        alongside work on the <strong>robustness and security</strong> of vision and language models to understand where and why they fail.
                     </p>
                     <div class="hero-links">
                         <a href="mailto:hsiao.chun.en@gmail.com" class="btn btn-primary">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                             Email
                         </a>
-                        <a href="https://github.com/xiao-0001" target="_blank" class="btn btn-outline">
+                        <a href="https://github.com/xiao-0001" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             GitHub
                         </a>
-                        <a href="CHUN_EN_HSIAO_CV.pdf" class="btn btn-outline">
+                        <a href="CHUN_EN_HSIAO_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                             CV
                         </a>
@@ -81,7 +117,7 @@
             <h2>Education</h2>
             <div class="edu-item">
                 <div class="edu-logo-wrap edu-logo-nycu">
-                    <img src="nycu_logo.png" alt="NYCU" class="edu-logo-img">
+                    <img src="nycu_logo.png" alt="NYCU logo" class="edu-logo-img" width="72" height="72" loading="lazy">
                 </div>
                 <div class="edu-content">
                     <div class="exp-header">
@@ -98,7 +134,7 @@
             </div>
             <div class="edu-item">
                 <div class="edu-logo-wrap edu-logo-fhsh">
-                    <img src="fhsh_logo.gif" alt="FHSH" class="edu-logo-img">
+                    <img src="fhsh_logo.gif" alt="National Feng Shan Senior High School logo" class="edu-logo-img" width="48" height="48" loading="lazy">
                 </div>
                 <div class="edu-content">
                     <div class="exp-header">
@@ -162,8 +198,8 @@
                 <p class="pub-authors">Yu-An Lu, <strong>Chun-En Hsiao</strong>, Chengwei Chiang, Hong-Han Shuai</p>
                 <p class="pub-summary">A diagnostic benchmark of 4,573 samples across 22 API domains showing that edge LLMs (8B&ndash;32B) fabricate plausible tool-call parameters instead of seeking clarification. A structured audit prompt collapses hallucination rates from 32&ndash;81% to below 5%, revealing a &ldquo;metacognition gap&rdquo; between prompted and default behavior.</p>
                 <div class="pub-links">
-                    <a href="MetaCog-Bench_Paper.pdf" target="_blank">Paper</a>
-                    <a href="MetaCog-Bench_Slides.pdf" target="_blank">Slides</a>
+                    <a href="MetaCog-Bench_Paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a href="MetaCog-Bench_Slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
                 </div>
             </div>
         </section>
@@ -178,14 +214,14 @@
                     <div class="exp-item">
                         <div class="exp-header">
                             <div>
-                                <h3>AI Cybersecurity Detection and Verification</h3>
-                                <p class="exp-role">Undergraduate Researcher, <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                                <h3>Vision-Language-Action &amp; World Models</h3>
+                                <p class="exp-role">Research Team Member, <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank" rel="noopener noreferrer">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
                             </div>
-                            <span class="exp-date">Sep. 2025 &ndash; Aug. 2026</span>
+                            <span class="exp-date">Jun. 2026 &ndash; Present</span>
                         </div>
                         <ul>
-                            <li>Working on a National Institute of Cyber Security research project with Prof. Shuai, focusing on transferable adversarial attacks in object detection.</li>
-                            <li>Studying the transferability of adversarial perturbations across heterogeneous detection architectures (YOLO, DINO, DiffusionDet) under cross-model and cross-distribution settings.</li>
+                            <li>Fine-tuning and ensembling multi-view vision-language models (SenseNova-SI, InternVL3-8B backbone) for spatial reasoning on the <a href="https://arxiv.org/abs/2506.21458" target="_blank" rel="noopener noreferrer">MindCube benchmark</a>.</li>
+                            <li>Developing self-improving world action models &mdash; using a policy's own world-model prediction consistency as a label-free reward for fixed-noise Diffusion-DPO on <a href="https://github.com/NVIDIA/Cosmos" target="_blank" rel="noopener noreferrer">NVIDIA Cosmos</a> Policy, letting a manipulation policy improve itself on RoboCasa without human labels or an external reward model.</li>
                         </ul>
                     </div>
                 </div>
@@ -195,14 +231,14 @@
                     <div class="exp-item">
                         <div class="exp-header">
                             <div>
-                                <h3>Vision-Language-Action &amp; World Models</h3>
-                                <p class="exp-role">Research Team Member, <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
+                                <h3>AI Cybersecurity Detection and Verification</h3>
+                                <p class="exp-role">Undergraduate Researcher, <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank" rel="noopener noreferrer">BASIC Lab</a> &middot; Advised by Prof. Hong-Han Shuai (帥宏翰)</p>
                             </div>
-                            <span class="exp-date">Jun. 2026 &ndash; Present</span>
+                            <span class="exp-date">Sep. 2025 &ndash; Aug. 2026</span>
                         </div>
                         <ul>
-                            <li>Fine-tuning and ensembling multi-view vision-language models (SenseNova-SI / InternVL3-8B) for spatial reasoning on the <a href="https://arxiv.org/abs/2506.21458" target="_blank">MindCube benchmark</a>.</li>
-                            <li>Developing self-improving world action models &mdash; using a policy's own world-model prediction consistency as a label-free reward for fixed-noise Diffusion-DPO on <a href="https://github.com/NVIDIA/Cosmos" target="_blank">NVIDIA Cosmos</a> Policy, improving RoboCasa manipulation success from 77% to 91%.</li>
+                            <li>Working on a National Institute of Cyber Security research project with Prof. Shuai, focusing on transferable adversarial attacks in object detection.</li>
+                            <li>Studying the transferability of adversarial perturbations across heterogeneous detection architectures (YOLO, DINO, DiffusionDet) under cross-model and cross-distribution settings.</li>
                         </ul>
                     </div>
                 </div>
@@ -231,7 +267,7 @@
             <div class="exp-item">
                 <div class="exp-header">
                     <div>
-                        <h3><a href="https://www.eneural.ai/" target="_blank">eNeural Technologies</a></h3>
+                        <h3><a href="https://www.eneural.ai/" target="_blank" rel="noopener noreferrer">eNeural Technologies</a></h3>
                         <p class="exp-role">Machine Learning Intern</p>
                     </div>
                     <span class="exp-date">Apr. 2026 &ndash; Present</span>
@@ -255,7 +291,7 @@
                             <span class="award-name">2nd Place, MindCube Challenge, CVinW Workshop @ CVPR 2026</span>
                             <span class="award-date">Jun. 2026</span>
                         </div>
-                        <p>Fine-tuned and ensembled multi-view vision-language models for spatial reasoning (LoRA on SenseNova-SI InternVL3-8B), reaching ~96% accuracy on the MindCube benchmark.</p>
+                        <p>Fine-tuned and ensembled multi-view vision-language models for spatial reasoning (LoRA on SenseNova-SI, InternVL3-8B backbone), reaching ~96% accuracy on the MindCube benchmark.</p>
                     </div>
                 </div>
                 <div class="award-item">
@@ -308,7 +344,7 @@
                 <div class="activity-card">
                     <h3>AI Advanced Talent Program</h3>
                     <p class="exp-role">Selected Participant &middot; Ministry of Education, Taiwan</p>
-                    <p class="exp-role">Instructor: <a href="https://uel.yuntech.edu.tw/facultyview_29.html" target="_blank">Prof. Szu-Hong Wang</a>, National Yunlin University of Science and Technology</p>
+                    <p class="exp-role">Instructor: <a href="https://uel.yuntech.edu.tw/facultyview_29.html" target="_blank" rel="noopener noreferrer">Prof. Szu-Hong Wang</a>, National Yunlin University of Science and Technology</p>
                     <ul class="activity-details">
                         <li>Comprehensive training in machine learning, deep learning, and computer vision (YOLO).</li>
                         <li>Hands-on experience with embedded systems (Raspberry Pi, Arduino).</li>
@@ -349,24 +385,41 @@
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     hsiao.chun.en@gmail.com
                 </a>
-                <a href="https://github.com/xiao-0001" target="_blank" class="footer-link">
+                <a href="https://github.com/xiao-0001" target="_blank" rel="noopener noreferrer" class="footer-link">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
-                <a href="https://www.instagram.com/xiao._ce/" target="_blank" class="footer-link">
+                <a href="https://www.instagram.com/xiao._ce/" target="_blank" rel="noopener noreferrer" class="footer-link">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
                     Instagram
                 </a>
-                <a href="https://www.linkedin.com/in/chun-en-hsiao-a76b9b364/" target="_blank" class="footer-link">
+                <a href="https://www.linkedin.com/in/chun-en-hsiao-a76b9b364/" target="_blank" rel="noopener noreferrer" class="footer-link">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     LinkedIn
                 </a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Hsiao, Chun-En</p>
+            <p>&copy; 2026 Chun-En Hsiao &middot; Last updated July 2026</p>
         </div>
     </footer>
 
+    <script>
+    (() => {
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.getElementById('nav-links');
+        if (!toggle || !links) return;
+        toggle.addEventListener('click', () => {
+            const open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        links.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                links.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
