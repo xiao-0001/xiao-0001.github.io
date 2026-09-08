@@ -921,3 +921,83 @@ main {
         border-color: var(--border);
     }
 }
+
+/* ===== Print (CV sites get printed and saved to PDF) ===== */
+@media print {
+    /* @media print does not cancel prefers-color-scheme, so force the light
+       palette back or a dark-mode visitor prints a black page. */
+    :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --text: #000000;
+        --text-secondary: #333333;
+        --accent: #000000;
+        --accent-light: #ffffff;
+        --border: #cccccc;
+        --border-hover: #cccccc;
+        --nav-bg: #ffffff;
+        --btn-bg: #ffffff;
+        --footer-bg: #ffffff;
+        --footer-text: #333333;
+    }
+
+    nav,
+    .nav-toggle,
+    .hero-links,
+    .timeline-dot {
+        display: none;
+    }
+
+    body {
+        font-size: 10.5pt;
+        line-height: 1.5;
+    }
+
+    main {
+        max-width: none;
+        padding: 0;
+    }
+
+    .timeline {
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .edu-item,
+    .exp-item,
+    .award-item,
+    .pub-item,
+    .interest-card,
+    .activity-card {
+        box-shadow: none;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    /* Links are dead on paper: spell out the destination for the ones a
+       reader would actually want to follow. */
+    .footer-link[href^="http"]::after,
+    .award-name a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 8.5pt;
+        font-weight: 400;
+        word-break: break-all;
+    }
+
+    .section,
+    .site-footer {
+        break-before: auto;
+    }
+}
