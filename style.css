@@ -309,7 +309,7 @@ main {
 
 .edu-logo-wrap,
 .org-logo-wrap {
-    width: 72px;
+    width: 88px;
     min-height: 56px;
     border-radius: 12px;
     display: flex;
@@ -342,7 +342,7 @@ main {
 /* Experience rows that carry an organization logo */
 .exp-item-logo {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
@@ -357,8 +357,34 @@ main {
 }
 
 .org-logo-eneural .org-logo-img {
-    width: 72px;
-    height: 43px;
+    width: 88px;
+    height: 52px;
+}
+
+.org-logo-basiclab .org-logo-img {
+    width: 85px;
+    height: 62px;
+}
+
+.org-logo-nics .org-logo-img {
+    width: 59px;
+    height: 68px;
+}
+
+.org-logo-acl .org-logo-img {
+    width: 74px;
+    height: 50px;
+}
+
+.pub-item-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pub-logo-content {
+    flex: 1;
+    min-width: 0;
 }
 
 /* ===== Interests Grid (Colorful) ===== */
@@ -828,7 +854,8 @@ main {
         text-align: center;
     }
 
-    .exp-item-logo {
+    .exp-item-logo,
+    .pub-item-logo {
         flex-direction: column;
         align-items: flex-start;
         gap: 14px;
