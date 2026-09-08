@@ -376,6 +376,11 @@ main {
     height: 50px;
 }
 
+.org-logo-fhsh .org-logo-img {
+    width: 66px;
+    height: 68px;
+}
+
 .pub-item-logo {
     display: flex;
     align-items: center;
