@@ -6,6 +6,7 @@
 }
 
 :root {
+    color-scheme: light dark;
     --bg: #ffffff;
     --surface: #ffffff;
     --text: #1a1a2e;
@@ -14,6 +15,11 @@
     --accent-hover: #4338ca;
     --accent-light: #eef2ff;
     --border: #e5e7eb;
+    --border-hover: #cbd0dc;
+    --nav-bg: #ffffff;
+    --btn-bg: #ffffff;
+    --footer-bg: #fafbfc;
+    --footer-text: #6b7280;
     --radius: 14px;
     --max-width: 1120px;
 }
@@ -70,7 +76,7 @@ button:focus-visible,
 nav {
     position: sticky;
     top: 0;
-    background: #ffffff;
+    background: var(--nav-bg);
     border-bottom: 1px solid var(--border);
     z-index: 100;
 }
@@ -248,7 +254,7 @@ main {
 }
 
 .btn-outline {
-    background: #fff;
+    background: var(--btn-bg);
     color: var(--text) !important;
     border: 1px solid var(--border);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
@@ -300,7 +306,7 @@ main {
 }
 
 .edu-item:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .edu-item:last-child {
@@ -414,7 +420,7 @@ main {
 }
 
 .interest-card:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .card-accent {
@@ -452,7 +458,7 @@ main {
 }
 
 .pub-item:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .pub-item + .pub-item {
@@ -573,7 +579,7 @@ main {
 }
 
 .exp-item:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .exp-header {
@@ -648,7 +654,7 @@ main {
 }
 
 .award-item:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .award-content {
@@ -698,7 +704,7 @@ main {
 }
 
 .activity-card:hover {
-    border-color: #cbd0dc;
+    border-color: var(--border-hover);
 }
 
 .activity-card h3 {
@@ -732,7 +738,7 @@ main {
 
 /* ===== Footer / Contact ===== */
 .site-footer {
-    background: #fafbfc;
+    background: var(--footer-bg);
     color: var(--text);
     border-top: 1px solid var(--border);
     padding: 3.5rem 2rem 1.5rem;
@@ -796,7 +802,7 @@ main {
     border-top: 1px solid var(--border);
     text-align: center;
     font-size: 13px;
-    color: #6b7280;
+    color: var(--footer-text);
 }
 
 /* ===== Responsive ===== */
@@ -813,7 +819,7 @@ main {
         top: 100%;
         left: 0;
         right: 0;
-        background: #ffffff;
+        background: var(--nav-bg);
         border-bottom: 1px solid var(--border);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
         padding: 18px 24px;
@@ -884,5 +890,34 @@ main {
         left: -24px;
         width: 12px;
         height: 12px;
+    }
+}
+
+/* ===== Dark Mode (follows the visitor's OS setting) ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0e1015;
+        --surface: #171a22;
+        --text: #e7e8ec;
+        --text-secondary: #a1a6b4;
+        --accent: #8b8df2;
+        --accent-hover: #a5a7f7;
+        --accent-light: #1f2038;
+        --border: #282c38;
+        --border-hover: #3a3f4f;
+        --nav-bg: #12141b;
+        --btn-bg: #1c1f28;
+        --footer-bg: #12141b;
+        --footer-text: #8b91a1;
+    }
+
+    /* Logo tiles keep a light ground: the marks themselves are drawn for one */
+    .edu-logo-wrap,
+    .org-logo-wrap {
+        background: #f3f4f6;
+    }
+
+    .hero-photo img {
+        border-color: var(--border);
     }
 }
