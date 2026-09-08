@@ -15,7 +15,7 @@
     --accent-light: #eef2ff;
     --border: #e5e7eb;
     --radius: 14px;
-    --max-width: 820px;
+    --max-width: 960px;
 }
 
 html {
@@ -341,8 +341,8 @@ main {
 
 /* Experience / publication logo slots are wider than the education ones */
 .org-logo-wrap {
-    width: 128px;
-    min-height: 96px;
+    width: 72px;
+    min-height: 56px;
 }
 
 .exp-item-logo {
@@ -357,33 +357,33 @@ main {
 }
 
 .org-logo-iis .org-logo-img {
-    width: 112px;
-    height: 112px;
+    width: 56px;
+    height: 56px;
 }
 
 .org-logo-eneural .org-logo-img {
-    width: 128px;
-    height: 76px;
+    width: 72px;
+    height: 42px;
 }
 
 .org-logo-basiclab .org-logo-img {
-    width: 128px;
-    height: 94px;
+    width: 72px;
+    height: 53px;
 }
 
 .org-logo-nics .org-logo-img {
-    width: 98px;
-    height: 112px;
+    width: 49px;
+    height: 56px;
 }
 
 .org-logo-acl .org-logo-img {
-    width: 128px;
-    height: 87px;
+    width: 72px;
+    height: 49px;
 }
 
 .org-logo-fhsh .org-logo-img {
-    width: 109px;
-    height: 112px;
+    width: 54px;
+    height: 56px;
 }
 
 .pub-item-logo {
