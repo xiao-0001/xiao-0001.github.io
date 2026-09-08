@@ -353,7 +353,7 @@ main {
 
 .exp-item-logo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -394,7 +394,7 @@ main {
 
 .pub-item-logo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
