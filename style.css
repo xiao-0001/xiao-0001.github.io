@@ -341,8 +341,8 @@ main {
 
 /* Experience / publication logo slots are wider than the education ones */
 .org-logo-wrap {
-    width: 120px;
-    min-height: 72px;
+    width: 128px;
+    min-height: 96px;
 }
 
 .exp-item-logo {
@@ -357,33 +357,33 @@ main {
 }
 
 .org-logo-iis .org-logo-img {
-    width: 92px;
-    height: 92px;
+    width: 112px;
+    height: 112px;
 }
 
 .org-logo-eneural .org-logo-img {
-    width: 120px;
-    height: 71px;
+    width: 128px;
+    height: 76px;
 }
 
 .org-logo-basiclab .org-logo-img {
-    width: 116px;
-    height: 85px;
+    width: 128px;
+    height: 94px;
 }
 
 .org-logo-nics .org-logo-img {
-    width: 80px;
-    height: 92px;
+    width: 98px;
+    height: 112px;
 }
 
 .org-logo-acl .org-logo-img {
-    width: 100px;
-    height: 68px;
+    width: 128px;
+    height: 87px;
 }
 
 .org-logo-fhsh .org-logo-img {
-    width: 89px;
-    height: 92px;
+    width: 109px;
+    height: 112px;
 }
 
 .pub-item-logo {
