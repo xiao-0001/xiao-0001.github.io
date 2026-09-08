@@ -79,7 +79,7 @@
                 </div>
                 <div class="hero-text">
                     <h1 class="name">Hsiao, Chun-En <span class="name-zh">(蕭群恩)</span></h1>
-                    <p class="hero-tagline">Undergraduate Researcher &middot; Embodied AI &middot; Vision-Language-Action &amp; World Action Models</p>
+                    <p class="hero-tagline">Undergraduate Researcher &middot; Embodied AI &middot; Vision-Language-Action Models &middot; AI&nbsp;Safety</p>
                     <p class="bio">
                         I am an undergraduate student in the <a href="https://aretehp.nycu.edu.tw/?language=en" target="_blank" rel="noopener noreferrer"><strong>Arete Honors Program</strong></a> at
                         <a href="https://en.nycu.edu.tw/" target="_blank" rel="noopener noreferrer">National Yang Ming Chiao Tung University (NYCU)</a>,
@@ -90,6 +90,11 @@
                         <a href="https://basiclab.lab.nycu.edu.tw/new/index.html" target="_blank" rel="noopener noreferrer">BASIC Lab</a>,
                         advised by <a href="https://basiclab.lab.nycu.edu.tw/" target="_blank" rel="noopener noreferrer">Prof. Hong-Han Shuai (帥宏翰)</a>,
                         where I work on <strong>vision-language-action (VLA) models</strong> and <strong>world action models (WAM)</strong> for embodied AI.
+                        I am also a research assistant at the
+                        <a href="https://www.iis.sinica.edu.tw/en/index.html" target="_blank" rel="noopener noreferrer">Institute of Information Science, Academia Sinica</a>,
+                        advised by <a href="https://homepage.iis.sinica.edu.tw/pages/lwku/" target="_blank" rel="noopener noreferrer">Prof. Lun-Wei Ku (古倫維)</a>,
+                        where I work on <strong>AI safety</strong> &mdash; measuring hallucination and designing guardrails &mdash;
+                        for a trustworthy news chatbot being built with Taiwan's public media consortium.
                     </p>
                     <p class="bio">
                         My research is driven by a simple question: <em>as AI systems become more capable and autonomous, how do we make them behave reliably under distribution shift and real-world uncertainty?</em>
@@ -219,6 +224,29 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
+                    <div class="exp-item exp-item-logo">
+                        <div class="org-logo-wrap org-logo-iis">
+                            <img src="sinica_iis_logo.jpg" alt="Institute of Information Science, Academia Sinica logo" class="org-logo-img" width="68" height="68" loading="lazy">
+                        </div>
+                        <div class="exp-logo-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3>AI Safety for a Trustworthy News LLM</h3>
+                                    <p class="exp-role">Research Assistant, <a href="https://www.iis.sinica.edu.tw/en/index.html" target="_blank" rel="noopener noreferrer">Institute of Information Science, Academia Sinica</a></p>
+                                    <p class="exp-role">Advised by <a href="https://homepage.iis.sinica.edu.tw/pages/lwku/" target="_blank" rel="noopener noreferrer">Prof. Lun-Wei Ku (古倫維)</a>, Research Fellow at Academia Sinica and Professor at NYCU</p>
+                                </div>
+                                <span class="exp-date">Aug. 2026 &ndash; Present</span>
+                            </div>
+                            <ul>
+                                <li>Responsible for the <strong>safety</strong> track of the <a href="https://about.pts.org.tw/pr/latestnews/article/5783" target="_blank" rel="noopener noreferrer">Public Media AI Chatbot Initiative</a> &mdash; a news-domain LLM grounded in the archives of Taiwan's seven public media outlets (PTS, CTS, CNA, Rti, Hakka TV, TITV, PTS Taigi) so that the public has a chatbot it can trust over misinformation. Public and professional editions are targeted for late 2026 (<a href="https://www.cna.com.tw/news/ahel/202509010183.aspx" target="_blank" rel="noopener noreferrer">CNA</a>).</li>
+                                <li>Measuring <strong>hallucination</strong> in news-grounded generation, and designing the <strong>guardrails</strong> and abstention behavior that decide when the system should refuse to answer rather than guess.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="exp-item">
                         <div class="exp-header">
                             <div>
@@ -271,18 +299,24 @@
         <!-- Industry Experience -->
         <section class="section" id="industry">
             <h2>Industry Experience</h2>
-            <div class="exp-item">
+            <div class="exp-item exp-item-logo">
+                <div class="org-logo-wrap org-logo-eneural">
+                    <img src="eneural_logo.svg" alt="eNeural Technologies logo" class="org-logo-img" width="72" height="43" loading="lazy">
+                </div>
+                <div class="exp-logo-content">
                 <div class="exp-header">
                     <div>
                         <h3><a href="https://www.eneural.ai/" target="_blank" rel="noopener noreferrer">eNeural Technologies</a></h3>
                         <p class="exp-role">Machine Learning Intern</p>
                     </div>
-                    <span class="exp-date">Apr. 2026 &ndash; Present</span>
+                    <span class="exp-date">Apr. 2026 &ndash; Aug. 2026</span>
                 </div>
                 <ul>
-                    <li>Developing model quantization pipelines (post-training quantization) to compress deep learning models and reduce inference latency for efficient edge deployment.</li>
-                    <li>Building AI agent tooling that automates and accelerates internal model-development workflows.</li>
+                    <li>Developed model quantization pipelines (post-training quantization) to compress deep learning models and reduce inference latency for efficient edge deployment.</li>
+                    <li>Built the perception-to-response pipeline for a smart homecare platform: an on-device YOLOX-Pose model flags falls, prolonged immobility, and danger-zone entry, then forwards the triggering frames and pose context to a <strong>vision-language model</strong> that writes an incident report and a spoken-alert script, which a <strong>text-to-speech</strong> model renders and plays back to caregivers.</li>
+                    <li>Built AI agent tooling that automates and accelerates internal model-development workflows.</li>
                 </ul>
+                </div>
             </div>
         </section>
 
@@ -292,6 +326,15 @@
 
             <div class="awards-group">
                 <h3 class="awards-category">International</h3>
+                <div class="award-item">
+                    <div class="award-content">
+                        <div class="award-header">
+                            <span class="award-name">2nd &amp; 3rd Place, Meta Wearable AI Challenge @ ECCV 2026</span>
+                            <span class="award-date">Aug. 2026</span>
+                        </div>
+                        <p>Competed in all six sub-tracks (three egocentric-assistant tasks &times; two model-size classes) with the <em>EgoAssist</em> model family, taking three podiums: <strong>2nd</strong> in EgoProactive 2B+ (0.7127 macro F1), <strong>3rd</strong> in EgoProactive &le;2B (0.6677 macro F1), and <strong>3rd</strong> in EgoConv &le;2B (0.3150 LLM-as-judge), with every winning entry under 5B parameters. Awarded <strong>$1,000 USD</strong> in prize money.</p>
+                    </div>
+                </div>
                 <div class="award-item">
                     <div class="award-content">
                         <div class="award-header">
@@ -346,7 +389,7 @@
                     <ul class="activity-details">
                         <li>Engaged in collaborative research projects focused on AI applications.</li>
                     </ul>
-                    <span class="exp-date">Sep. 2025 &ndash; Present</span>
+                    <span class="exp-date">Sep. 2025 &ndash; Jul. 2026</span>
                 </div>
                 <div class="activity-card">
                     <h3>AI Advanced Talent Program</h3>
@@ -407,7 +450,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Chun-En Hsiao &middot; Last updated July 2026</p>
+            <p>&copy; 2026 Chun-En Hsiao &middot; Last updated September 2026</p>
         </div>
     </footer>
 

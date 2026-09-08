@@ -307,7 +307,8 @@ main {
     margin-bottom: 0;
 }
 
-.edu-logo-wrap {
+.edu-logo-wrap,
+.org-logo-wrap {
     width: 72px;
     min-height: 56px;
     border-radius: 12px;
@@ -329,12 +330,35 @@ main {
     height: 48px;
 }
 
-.edu-logo-img {
+.edu-logo-img,
+.org-logo-img {
     object-fit: contain;
 }
 
 .edu-content {
     flex: 1;
+}
+
+/* Experience rows that carry an organization logo */
+.exp-item-logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.exp-logo-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.org-logo-iis .org-logo-img {
+    width: 68px;
+    height: 68px;
+}
+
+.org-logo-eneural .org-logo-img {
+    width: 72px;
+    height: 43px;
 }
 
 /* ===== Interests Grid (Colorful) ===== */
@@ -802,6 +826,12 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .exp-item-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
     }
 
     .footer-content {
