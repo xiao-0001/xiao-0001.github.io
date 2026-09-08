@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 
     <script type="application/ld+json">
     {
@@ -245,8 +245,9 @@
                             <span class="exp-date">Aug. 2026 &ndash; Present</span>
                         </div>
                         <ul>
-                            <li>Responsible for the <strong>safety</strong> track of the <a href="https://about.pts.org.tw/pr/latestnews/article/5783" target="_blank" rel="noopener noreferrer">Public Media AI Chatbot Initiative</a> &mdash; a news-domain LLM grounded in the archives of Taiwan's seven public media outlets (PTS, CTS, CNA, Rti, Hakka TV, TITV, PTS Taigi) so that the public has a chatbot it can trust over misinformation. Public and professional editions are targeted for late 2026 (<a href="https://www.cna.com.tw/news/ahel/202509010183.aspx" target="_blank" rel="noopener noreferrer">CNA</a>).</li>
+                            <li>Responsible for the <strong>safety</strong> track of the <a href="https://about.pts.org.tw/pr/latestnews/article/5783" target="_blank" rel="noopener noreferrer">Public Media AI Chatbot Initiative</a> &mdash; a news-domain LLM grounded in the archives of Taiwan's seven public media outlets (PTS, CTS, CNA, Rti, Hakka TV, TITV, PTS Taigi), so that the public has a chatbot it can trust over misinformation.</li>
                             <li>Measuring <strong>hallucination</strong> in news-grounded generation, and designing the <strong>guardrails</strong> and abstention behavior that decide when the system should refuse to answer rather than guess.</li>
+                            <li>Public and professional editions are targeted for late 2026 (<a href="https://www.cna.com.tw/news/ahel/202509010183.aspx" target="_blank" rel="noopener noreferrer">CNA</a>).</li>
                         </ul>
                         </div>
                     </div>
@@ -360,7 +361,8 @@
                     </div>
                     <ul>
                         <li>Developed model quantization pipelines (post-training quantization) to compress deep learning models and reduce inference latency for efficient edge deployment.</li>
-                        <li>Built the perception-to-response pipeline for a smart homecare platform: an on-device YOLOX-Pose model flags falls, prolonged immobility, and danger-zone entry, then forwards the triggering frames and pose context to a <strong>vision-language model</strong> that writes an incident report and a spoken-alert script, which a <strong>text-to-speech</strong> model renders and plays back to caregivers.</li>
+                        <li>Built the perception-to-response pipeline for a smart homecare platform, where an on-device <strong>YOLOX-Pose</strong> model flags falls, prolonged immobility, and entry into danger zones.</li>
+                    <li>On a trigger, the pipeline hands the relevant frames and pose context to a <strong>vision-language model</strong> that writes an incident report and a spoken-alert script, which a <strong>text-to-speech</strong> model then renders and plays back to caregivers.</li>
                         <li>Built AI agent tooling that automates and accelerates internal model-development workflows.</li>
                     </ul>
                     </div>
