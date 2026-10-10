@@ -86,15 +86,7 @@ PDF 履歷看不出研究方向之間的關係，所以我想做一個能**互�
 - SEO：meta description、Open Graph 分享卡片、JSON-LD、`sitemap.xml`、`robots.txt`。
 - 無障礙：互動卡片用 `<button>` 搭配 `aria-pressed`，有鍵盤 focus 樣式，也支援 `prefers-reduced-motion`。
 
-## 六、驗收標準（用無頭瀏覽器 Playwright 實測）
-
-- [x] 點「AI Security」卡片：2 筆高亮、5 筆變淡；按 Show all 後全部恢復
-- [x] 主題切到 Dark 後重新整理，仍然是 Dark
-- [x] 捲到 Interests 區塊時，導覽列標示 Interests
-- [x] 手機寬度 390px 沒有橫向溢出，漢堡選單可以展開
-- [x] Console 沒有任何 JavaScript 錯誤
-
-## 七、和 AI 反覆修改的過程
+## 六、和 AI 反覆修改的過程
 
 這個網站從 2026 年 3 月開始，跟 AI 一起來回改了 80 幾個 commit，完整紀錄都在 [commit history](https://github.com/xiao-0001/xiao-0001.github.io/commits/main)。幾個主要階段：
 
