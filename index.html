@@ -1096,7 +1096,8 @@ button.interest-card:focus-visible { outline: 2px solid var(--accent); outline-o
 [data-tags] { transition: opacity 0.25s, filter 0.25s; }
 body.filtering [data-tags].dim { opacity: 0.28; filter: grayscale(0.8); }
 body.filtering [data-tags].match > .exp-item,
-body.filtering .pub-item.match { border-color: var(--accent); }
+body.filtering .pub-item.match,
+body.filtering .award-item.match { border-color: var(--accent); }
 
 .copy-btn {
     background: none; border: 1px solid var(--border); border-radius: 6px;
@@ -1315,7 +1316,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
         <!-- Research Interests -->
         <section class="section" id="interests">
             <h2>Research Interests</h2>
-            <p class="filter-hint" id="filter-hint">Click a card to highlight related publications and experience.</p>
+            <p class="filter-hint" id="filter-hint">Click a card to highlight related publications, experience, and awards.</p>
             <div class="interests-grid">
                 <button type="button" class="interest-card card-vla" data-filter="embodied" aria-pressed="false">
                     <span class="card-accent"></span>
@@ -1524,7 +1525,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
 
             <div class="awards-group">
                 <h3 class="awards-category">International</h3>
-                <div class="award-item">
+                <div data-tags="embodied edge" class="award-item">
                     <div class="award-content">
                         <div class="award-header">
                             <span class="award-name"><a href="https://wearable-ai-workshop.github.io/" target="_blank" rel="noopener noreferrer">2nd &amp; 3rd Place, Meta Wearable AI Challenge @ ECCV 2026</a></span>
@@ -1534,7 +1535,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
                         <p>Every podium entry ran under 5B parameters; the EgoProactive 2B+ result came from a 4.54B model placing above a 27B one. Awarded <strong>$1,000 USD</strong> in prize money.</p>
                     </div>
                 </div>
-                <div class="award-item">
+                <div data-tags="embodied" class="award-item">
                     <div class="award-content">
                         <div class="award-header">
                             <span class="award-name"><a href="https://eval.ai/web/challenges/challenge-page/2687/overview" target="_blank" rel="noopener noreferrer">2nd Place, MindCube Challenge, CVinW Workshop @ CVPR 2026</a></span>
@@ -1543,7 +1544,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
                         <p>Fine-tuned and ensembled multi-view vision-language models for spatial reasoning (LoRA on SenseNova-SI, InternVL3-8B backbone), reaching ~96% accuracy on the MindCube benchmark.</p>
                     </div>
                 </div>
-                <div class="award-item">
+                <div data-tags="safety" class="award-item">
                     <div class="award-content">
                         <div class="award-header">
                             <span class="award-name"><a href="https://neurips.cc/virtual/2025/competition/127720" target="_blank" rel="noopener noreferrer">Excellence Award in Human-Aligned Evaluation, CURE-BENCH @ NeurIPS 2025</a></span>
@@ -1556,7 +1557,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
 
             <div class="awards-group">
                 <h3 class="awards-category">Domestic</h3>
-                <div class="award-item">
+                <div data-tags="" class="award-item">
                         <div class="award-content">
                         <div class="award-header">
                             <span class="award-name"><a href="https://114hsinchuhackathon.com/" target="_blank" rel="noopener noreferrer">Creative Award, Hsinchu Policy Hackathon</a></span>
@@ -1565,7 +1566,7 @@ body.filtering .pub-item.match { border-color: var(--accent); }
                         <p>Built CitySight, an urban maintenance visualization platform integrating public infrastructure data for city governance.</p>
                     </div>
                 </div>
-                <div class="award-item">
+                <div data-tags="security" class="award-item">
                         <div class="award-content">
                         <div class="award-header">
                             <span class="award-name"><a href="https://twsf.ntsec.gov.tw/" target="_blank" rel="noopener noreferrer">Excellence Award in Region 6, Taiwan National Science Fair</a></span>
